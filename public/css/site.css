@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Cabin';
+  src: url('../fonts/Cabin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Cabin-regular.ttf') format('truetype');
+}
+
+body {
+  font-family: "Cabin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  margin: 20px 0;
+}
+
+.service-logo {
+  height: 100px;
+  width: 100px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>{{.title}}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.7.min.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/site.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.gstatic.com/s/cabin/v12/4VMQLG5UaE3m5rr_emmAqaCWcynf_cDxXwCLxiixG1c.woff2" rel="stylesheet"> -->
+  <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+  <script src="/public/js/jquery-2.2.4.min.js"></script>
+  <script src="/public/js/bootstrap-3.3.7.min.js"></script>
+  {{range .moreStyles}}
+  <link rel="stylesheet" type="text/css" href="/public/{{.}}">
+  {{end}}
+  {{range .moreScripts}}
+  <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+  {{end}}
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row" style="background-color:black">
+      <div class="col-md-1" >
+        <img class="logo" src="public/img/logo.png" />
+      </div>
+      <div class="col-md-9" >
+        <h1 style="color:white;margin-top:15px">DevOps Self Service Portal</h1>
+      </div>
+      <div class="col-md-2" >
+        <p class="alert alert-success text-center" style="margin: 15px 0" role="alert">
+          login placeholder
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"> <!-- navbar -->
+        <table class="table table-bordered table-striped table-hover">
+          <thead></thead>
+          <tfoot></tfoot>
+          <tbody>
+            <tr>
+              <td>
+                <img class="img-responsive" src="public/img/github.svg" alt="Github" />
+                <p class="text-center">Github</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-responsive" src="public/img/artifactory.svg" alt="Artifactory">
+                <p class="text-center">Artifactory</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-responsive" src="public/img/jenkins.svg" alt="Jenkins">
+                <p class="text-center">Jenkins</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="img-responsive" src="public/img/sonarqube.svg" alt="Sonarqube">
+                <p class="text-center">Sonarqube</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-9">  <!-- content -->
+        <p class="alert alert-success text-center" style="margin: 15px 0" role="alert">
+          login placeholder
+        </p>
+
+      </div>
+
+      <div class="col-md-1"> <!-- status -->
+        <p class="alert alert-info" style="margin: 15px 0" role="alert">
+          inflight
+        </p>
+        <p class="alert alert-warning" style="margin: 15px 0" role="alert">
+          actionable
+        </p>
+      </div>
+      <div class="col-md-1">
+        <p class="alert alert-success" style="margin: 15px 0" role="alert">
+          completed
+        </p>
+        <p class="alert alert-danger" style="margin: 15px 0" role="alert">
+          rejected
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
